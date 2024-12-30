@@ -1,0 +1,114 @@
+body {
+    font-family: verdana;
+    font-weight: bold;
+    background-color: #222121;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#botonbusqueda {
+    background-image: url('css/searchicon.svg');
+    background-position: 10px 10px;
+    background-color: #454545;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+  
+#pokedex {
+    font-size: 12px;
+}
+  
+#pokedex th, #pokedex td {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+#pokedex td{
+    background-color: #454545;
+    border: 1px solid #383838;
+}
+
+#pokedex th{
+    background-color: #507C36;
+    border: 1px solid #507C36;
+}
+
+#pkm {
+    padding: 5px;
+    border: 1px solid #383838;
+    border-radius: 30px;
+}
+
+#linkpkm {
+    text-decoration: none;
+    color: white;
+}
+
+#linkpkm:hover {
+    text-decoration: underline;
+    color: #CEBC77;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext, .tooltip:hover tr {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: table-row !important;
+}
+
+.tooltip .tooltiptext .tooltip-table-container {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tooltip .tooltiptext table {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tooltip .tooltiptext table th {
+    background-color: #507C36;
+    font-weight: bold;
+    color: white;
+}
+
+.tooltip .tooltiptext table td {
+    background-color: #454545;
+    color: white;
+}
